@@ -377,6 +377,10 @@ content-box {
                      Home Page
 ===============================================*/
 
+.without-banner {
+  margin-top: 100px;
+}
+
 .banner-image-homepage {
   margin-top: 100px;
   position: relative;
@@ -726,10 +730,6 @@ content-box {
 .text-1 {
   margin-bottom: 15px;
 } */
-.total-books {
-  /* background: red; */
-  margin-bottom: 50px;
-}
 
 .list-group-item {
   position: relative;
@@ -793,6 +793,7 @@ content-box {
 .pagination-section {
   height: 20px;
   margin-bottom: 50px;
+  margin-top: 50px;
   /* background: #6255a5;
   border-radius: 50%; */
 }
@@ -807,7 +808,7 @@ content-box {
   padding: 5px 12px;
   text-decoration: none;
   font-family: "Open sans";
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 20px;
   color: #333333;
@@ -828,6 +829,180 @@ content-box {
 }
 .row-notes-1 {
   margin-bottom: 30px;
+}
+
+/*==================================================
+                    User-Dashboard
+==================================================*/
+
+.User-Dashboard {
+  margin-top: 100px;
+}
+.dashboard-1 {
+  padding-top: 60px;
+}
+
+.User-Dashboard h3 {
+  font-family: "Open sans";
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 38px;
+  color: #6255a5;
+  /* margin-top: 60px; */
+  /* margin-bottom: 0px; */
+}
+
+.add-note-btn button {
+  border-radius: 3px;
+  font-family: "Open sans";
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  width: 150px;
+  height: 45px;
+  background: #6255a5;
+  color: #fff;
+  border: none;
+}
+.dashboard-detail-2 {
+  margin-top: 30px;
+}
+.flex-container-2 {
+  display: flex;
+  align-items: stretch;
+  /* background-color: #f1f1f1; */
+}
+
+.flex-container-2 > div {
+  border: 1px solid #d1d1d1;
+  /* color: red; */
+  margin: 0px 10px 0px 10px;
+  text-align: center;
+  border-radius: 2px;
+  padding: 25px 0px 25px 0px;
+  /* line-height: 75px; */
+  /* height: 151px; */
+  /* font-size: 30px; */
+}
+.flex-container-2 > div > div > h6 {
+  /* margin-bottom: 0px; */
+  /* padding: 30px; */
+  font-family: "Open sans";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #6255a5;
+}
+.flex-container-2 > div > div > span {
+  font-family: "Open sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #333333;
+}
+
+#box-2 {
+  margin-left: -10px;
+  border-right: none;
+}
+#box-3 {
+  border-left: none;
+  margin-left: -10px;
+}
+
+.progress-notes {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.progress-dashboard h3 {
+  font-family: "Open sans";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #6255a5;
+  /* margin-top: 60px; */
+  /* margin-bottom: 0px; */
+}
+.progress-note-btn button {
+  border-radius: 3px;
+  font-family: "Open sans";
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  width: 117px;
+  height: 40px;
+  background: #6255a5;
+  color: #fff;
+  border: none;
+}
+#search-enter-progress {
+  background-image: url("../images/Search-Notes/searchicon.png");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 322px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  height: 40px;
+  font-family: "Open sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #8a8a8a;
+}
+
+.progress-table {
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+}
+.table {
+  margin-bottom: 0px;
+}
+
+.table thead th {
+  font-family: "Open sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #333333;
+}
+.table td {
+  font-family: "Open sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333333;
+}
+
+#table-raw-2 {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.action-1 {
+  margin-right: 15px;
+}
+.table td,
+.table th {
+  padding: 1.75rem;
+}
+#dash-3 {
+  margin-right: -5px;
+}
+#dash-4 {
+  margin-left: -5px;
+  /* padding-left: -25px;
+  padding-right: -25px; */
+}
+#earning {
+  font-family: "Open sans";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #6255a5;
+}
+#img-4 {
+  height: 35px;
+  width: 70px;
 }
 /*==================================================
                     footer-wrapper
