@@ -48,8 +48,8 @@ $(".togglefaq").click(function(e) {
   var notthis = $(".active").not(this);
   notthis
     .find(".fa-minus")
-    .addClass("fa fa-plus")
-    .removeClass("fa fa-minus");
+    .addClass("fa-plus")
+    .removeClass("fa-minus");
   notthis
     .toggleClass("active")
     .next(".faqanswer")
@@ -58,9 +58,6 @@ $(".togglefaq").click(function(e) {
     .toggleClass("active")
     .next()
     .slideToggle("fast");
-  // $(this)
-  //   .children("i")
-  //   .toggleClass("fa-plus fa-minus");
   $(this)
     .find("i")
     .toggleClass("fa-plus fa-minus");

@@ -9,6 +9,56 @@
 /*===============================================
                     Content Box
 ===============================================*/
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* height: 100px; */
+}
+.bg-light {
+  /* height: 100px; */
+  z-index: 5000;
+  box-shadow: 0px 0px 30px 0px rgb(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+li.nav-item {
+  font-family: "Open sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #333333;
+  padding: 0px 15px;
+}
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Open sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #333333;
+  padding: 15px 0px;
+}
+.bg-light {
+  background-color: #fff !important;
+}
+
+.login-note-btn button {
+  border-radius: 3px;
+  font-family: "Open sans";
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 22px;
+  width: 100px;
+  height: 40px;
+  background: #6255a5;
+  color: #fff;
+  border: none;
+}
+
+/*===============================================
+                    Content Box
+===============================================*/
 .main-page {
   width: 100%;
   margin: 0 auto;
@@ -79,7 +129,7 @@
                     Login Page
 ==================================================*/
 
-content-box {
+.content-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -377,9 +427,9 @@ content-box {
                      Home Page
 ===============================================*/
 
-.without-banner {
+/* .without-banner {
   margin-top: 100px;
-}
+} */
 
 .banner-image-homepage {
   margin-top: 100px;
@@ -429,7 +479,7 @@ content-box {
                     About Page
 ==================================================*/
 .home-about-lg {
-  margin-top: 60px;
+  margin-top: 126px;
   margin-bottom: 60px;
 }
 
@@ -479,6 +529,12 @@ content-box {
   margin-bottom: 30px;
 }
 
+.work #left-work {
+  transform: translateX(50px);
+}
+.work #right-work {
+  transform: translateX(-50px);
+}
 .work .left-work {
   position: relative;
   border-radius: 50%;
@@ -617,7 +673,7 @@ content-box {
                     Search-Notes
 ==================================================*/
 .Search-img-text {
-  margin-top: 100px;
+  margin-top: 66px;
   position: relative;
   background: url("../images/Search-Notes/banner-with-overlay.jpg") no-repeat
     center;
@@ -987,10 +1043,6 @@ content-box {
   height: 35px;
   width: 70px;
 }
-/* .dropdown-2:hover {
-  display: block;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-} */
 
 .table tbody tr:hover {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
@@ -1480,6 +1532,45 @@ set-box-shadow-cicis-menu-to-go {
   margin: 0;
   padding-bottom: 20px;
 }
+
+/*==================================================
+                    add notes page
+==================================================*/
+#add-notes-form .input-group-prepend .input-group-text {
+  background: none;
+  border: none;
+}
+
+#add-notes-form .radio-input input {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+#add-notes-form .radio-input label {
+  margin-right: 15px;
+}
+
+#add-notes-form .price {
+  margin-top: -10px;
+}
+
+#add-notes-form textarea {
+  min-height: 100px;
+}
+
+/*==================================================
+                   Conatct Us
+==================================================*/
+
+/* .contactus {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.contactus h3 {
+}
+.contactus p {
+} */
 
 /*==================================================
                     footer-wrapper

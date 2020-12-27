@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- title -->
+    <title>3.3.1-Add-Notes</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css">
+
+    <!-- Bootstrap Css    -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- Top Image With Text -->
+    <div class="container-fluid p-0">
+        <div class="image-with-text">
+            <h3 class="text-center">Add Notes</h3>
+        </div>
+    </div>
+
+    <div id="add-notes-form">
+
+        <!-- Form Area -->
+        <div id="user-profile-form" class="profile-form">
+
+            <form>
+
+                <div class="container">
+
+                    <!-- Basic Notes Detail -->
+                    <div id="basic-profile-details" class="detail-content-box">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <h3>Basic Note Details</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="form-group">
+                                    <label>Title * </label>
+                                    <input type="text" class="form-control" placeholder="Enter Your notes title">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="form-group">
+                                    <label>Category * </label>
+                                    <input class="form-control" placeholder="Select your category">
+                                    <!--
+                                <select class="form-control">
+                                    <option>Select your category</option>
+                                    <option>Science</option>
+                                    <option>IT</option>
+                                    <option>AI</option>
+                                </select>
+-->
+                                    <span><img src="images/User-Profile/down-arrow.png" alt="arrow-image"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="form-group profile-picture-input">
+                                    <label>Display Picture</label>
+                                    <input class="form-control">
+                                    <span><img src="images/User-Profile/upload.png" alt="upload-image">
+                                        <p>Upload a picture</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="form-group profile-picture-input">
+                                    <label>Upload Notes *</label>
+                                    <input class="form-control">
+                                    <span><img src="images/User-Profile/upload.png" alt="upload-image">
+                                        <p>Upload your notes</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label>Type</label>
+                                    <input class="form-control" placeholder="Select your type">
+                                    <!--
+                                <select class="form-control">
+                                    <option>Select your type</option>
+                                    <option>Paid</option>
+                                    <option>Free</option>
+                                </select>
+-->
+                                    <span><img src="images/User-Profile/down-arrow.png" alt="calender-image"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label>Number od Pages</label>
+                                    <input type="text" class="form-control" placeholder="Enter Your note pages">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group profile-picture-input last-row">
+                                    <label>Description</label>
+                                    <textarea class="form-control" placeholder="Description..." rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Institution information -->
+                    <div id="address-details" class="detail-content-box">
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <h3>Institution Information</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="form-group last-row">
+                                    <label>Country</label>
+                                    <input type="text" class="form-control" placeholder="Select your country">
+                                    <!--
+                                <select class="form-control">
+                                    <option>Select your country</option>
+                                    <option>India</option>
+                                    <option>Us</option>
+                                    <option>Zapan</option>
+                                </select>
+-->
+                                    <span><img src="images/User-Profile/down-arrow.png" alt="calender-image"></span>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="form-group last-row margin-top">
+                                    <label>Institution Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your zipcode">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Course Detail -->
+                    <div id="address-details" class="detail-content-box">
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <h3>Course Details</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="form-group">
+                                    <label>Course Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your course name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="form-group">
+                                    <label>Course Code</label>
+                                    <input type="text" class="form-control" placeholder="Enter your course code">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group last-row last-row-small">
+                                    <label>Professor / Lecturer</label>
+                                    <input type="text" class="form-control" placeholder="Enter your professor name">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- University and college information -->
+                    <div id="university and college information" class="detail-content-box">
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <h3>Selling Information</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="form-group">
+                                    <label>Sell for *</label>
+                                    <div class="input-group radio-input">
+                                        <input type="radio" name="sell-for">
+                                        <label for="gridCheck">
+                                            Free
+                                        </label>
+                                        <input type="radio" name="sell-for">
+                                        <label for="gridCheck">
+                                            Paid
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group price">
+                                    <label>Sell Price *</label>
+                                    <input type="text" class="form-control" placeholder="Enter your price">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="form-group profile-picture-input">
+                                    <label>Note Preview</label>
+                                    <input class="form-control">
+                                    <span><img src="images/User-Profile/upload.png" alt="calender-image">
+                                        <p>Upload a file</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <button class="btn-general btn-submit-form mr-3">save</button>
+                                <button class="btn-general btn-submit-form">publish</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- footer section -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div id="text-area" class="col-md-6">
+                    <p>Copyright <i class="fa fa-copyright"></i> TatvaSoft All rights reserved.</p>
+                </div>
+                <div id="icon-area" class="col-md-6">
+                    <ul class="social-list">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section End -->
+
+
+       <!-- Jquery   -->
+        <script src="js/jquery/jquery-3.5.1.min.js"></script>
+
+        <!-- Bootstrap Js -->
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+
+        <!-- Custom Js -->
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
