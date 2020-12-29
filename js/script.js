@@ -98,3 +98,12 @@ $(function() {
     }
   }
 });
+
+
+/*==================================================
+                    add and remove active class in navbar
+==================================================*/
+$('.navbar .navbar-nav a').on('click', function () {
+  $('.navbar .navbar-nav').find('a.active').removeClass('active');
+  $(this).addClass('active');
+});

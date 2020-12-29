@@ -9,12 +9,29 @@
 
 /* Medium Devices (Landscape Tablets & Medium Desktops) */
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1200px) {
+  #Note-Detail #Note-Details-Right .title-value .rate {
+    margin-left: -60px;
+  }
 }
 
 /* Small Devices (Portrait Tablets & Small Desktops) */
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 992px) {
+  #search-enter-progress {
+    width: 200px;
+  }
+  .client-profile form .profile-picture-input span img {
+    margin-right: 200px;
+  }
+
+  #dash-4 {
+    margin-left: 0px;
+  }
+
+  #dash-3 {
+    margin-right: 0px;
+  }
   .banner-img-text {
     height: 200px;
   }
@@ -29,19 +46,47 @@
     margin-top: 35px;
   }
 
-  .client-profile form .profile-picture-input span img {
-    margin-top: -45px;
-    margin-right: 135px;
-  }
-
   .btn-general.btn-submit-form {
     margin-bottom: 35px;
   }
+  .flex-container {
+    display: inline;
+  }
+
+ 
+  .rate {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  
 }
 
-/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  #dash-4 {
+    margin-left: 10px;
+  }
+  #dash-3 {
+    margin-right: 10px;
+  }
+  #box-3 {
+    border-left: 1px solid #d1d1d1;
+    margin-left: 10px;
+  }
+  #box-2 {
+    margin-left: 10px;
+  }
+  .flex-container-2 > div {
+    margin-bottom: 20px;
+  }
+  .flex-container-2 {
+    display: inline;
+  }
+  #box-2 {
+    /* margin-left: -5px; */
+    border-right: 1px solid #d1d1d1;
+    /* margin: 10px 0px; */
+  }
   /* General form (login, signup, forgot password, change password) */
 
   .btn-general {
@@ -146,6 +191,30 @@
     padding-top: 0px;
     text-align-last: center;
   }
+
+  .customer-name-1 {
+    text-align: center;
+    /* width: max-content; */
+  }
+  #left-work {
+    margin-bottom: 30px;
+  }
+  .col-md-4 {
+    margin-bottom: 30px;
+  }
+
+  
+
+@media (max-width: 576px) {
+
+  .row-2 {
+    justify-content: center;
+  }
+
+ 
+  /* .client-profile form .profile-picture-input span img {
+    margin-right: 0px;
+  } */
 }
 
 /* Extra Small Devices (Portrait Phones & Smaller Devices) */
@@ -240,11 +309,6 @@
     font-size: 35px;
   }
 
-  .client-profile form .profile-picture-input span img {
-    margin-top: -45px;
-    margin-right: 125px;
-  }
-
   .last-row-small {
     margin-bottom: 15px;
   }
@@ -252,6 +316,16 @@
   .phone-number-input {
     margin-top: 10px;
   }
+
+  .row-2 {
+    justify-content: center;
+  }
+
+  .customer-name-1 {
+    text-align: center;
+  }
+
+ 
 }
 
 /* Extra Small Devices (Portrait Phones & Smaller Devices) */
@@ -351,5 +425,14 @@
   .profile-detail-box h3 {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .row-2 {
+    justify-content: center;
+  }
+
+ 
+  #search-enter-progress {
+    width: 150px;
   }
 }

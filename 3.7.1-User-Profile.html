@@ -9,6 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- title -->
         <title>3.7.1-User-Profile</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/Homepage/favicon.ico">
 
         <!-- Google Font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,53 +33,64 @@
 
     <body>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-                    <a class="navbar-brand" href="#"><img
-                            src="images/Login/top-logo_2.png" alt=""></a>
-                    <button class="navbar-toggler" type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img
+                        src="images/Homepage/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <div class="collapse navbar-collapse"
-                        id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><span
-                                        class="sr-only">(current)</span>Search
-                                    Notes </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sell Your Notes</a>
-                            </li>
-                             <li class="nav-item">
-                                <a class="nav-link" href="#">Buyer Requests</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">FAQ</a>
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Search
+                                Notes </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sell Your Notes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Buyer Requests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact Us</a>
                             </li>
-                            </li>
-                               <li class="nav-item">
-                                <a class="nav-link" href="#"><img class="img-responsive" id="nav-img" src="images/Login/navbar.jpg" alt="customer-image"></a>
-                            </li>
-
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0">
-
-                            <div class="login-note-btn">
-                                <a href=""><button>Logout</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown-profile">
+                                <a class="dropbtn-profile nav-link" href="#"><img
+                                        src="images/Notes-Details/client-1.jpg"
+                                        alt="customer-image"></a>
+                                <div class="dropdown-content-profile">
+                                    <a href="#">My Profile</a>
+                                    <a href="#">My Download</a>
+                                    <a href="#">My Sold Notes</a>
+                                    <a href="#">My Rejected Notes</a>
+                                    <a href="#">Change Password</a>
+                                    <a href="#">logout</a>
+                                </div>
                             </div>
-                        </form>
-                    </div>
+                        </li>
+
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+
+                        <div class="login-note-btn">
+                            <a href=""><button>Logout</button></a>
+                        </div>
+                    </form>
                 </div>
-            </nav>
+            </div>
+        </nav>
 
         <!-- Top Image With Text -->
         <div class="container-fluid p-0">
@@ -135,15 +148,14 @@
                             <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="form-group">
                                     <label for="dateOfBirth">Date Of Birth</label>
-                                    <input type="text" class="form-control"
+                                    <input type="date" class="form-control"
                                         id="exampleInputLastName"
-                                        aria-describedby="emailHelp"
-                                        placeholder="Enter your date of birth">
-                                    <span toggle="#password-field"
+                                        aria-describedby="emailHelp">
+                                    <!-- <span toggle="#password-field"
                                         id="toggle-password"
                                         class="toggle-password"><img
                                             src="images/User-Profile/calendar.png"
-                                            alt="calender-image"></span>
+                                            alt="calender-image"></span> -->
                                 </div>
                             </div>
                         </div>
@@ -351,7 +363,7 @@
         <!-- footer section End -->
 
 
-         <!-- Optional JavaScript -->
+        <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
