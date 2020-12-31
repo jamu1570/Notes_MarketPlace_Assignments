@@ -99,11 +99,27 @@ $(function() {
   }
 });
 
-
 /*==================================================
                     add and remove active class in navbar
 ==================================================*/
-$('.navbar .navbar-nav a').on('click', function () {
-  $('.navbar .navbar-nav').find('a.active').removeClass('active');
-  $(this).addClass('active');
+$(".navbar .navbar-nav a").on("click", function() {
+  $(".navbar .navbar-nav")
+    .find("a.active")
+    .removeClass("active");
+  $(this).addClass("active");
+});
+
+/*==================================================
+                    File input
+==================================================*/
+
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this)
+    .val()
+    .split("\\")
+    .pop();
+  $(this)
+    .siblings(".custom-file-label")
+    .addClass("selected")
+    .html(fileName);
 });
