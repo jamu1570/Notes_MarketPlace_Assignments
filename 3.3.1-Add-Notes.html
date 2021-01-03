@@ -28,6 +28,7 @@
 
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="css/responsive.css">
+    
 
     </head>
 
@@ -130,17 +131,15 @@
                                     <!-- <input class="form-control" placeholder="Select your category"> -->
                                     <select class="form-control"
                                         id="exampleFormControlSelect1"
-                                        placeholder="Select your category">
-                                        <option>Select your category</option>
+                                       >
+                                        <option onmouseover="this.style.background='red'" >Select your category</option>
                                         <option>Category 1</option>
                                         <option>Category 2</option>
                                         <option>Category 3</option>
                                         <option>Category 4</option>
                                         <option>Category 5</option>
                                     </select>
-                                    <!-- <span><img
-                                            src="images/User-Profile/down-arrow.png"
-                                            alt="calender-image"></span> -->
+                              
                                 </div>
                             </div>
                         </div>
@@ -329,7 +328,7 @@
                                 <div class="form-group">
                                     <label>Sell for *</label>
                                     <div class="input-group radio-input">
-                                        <input type="radio" name="sell-for">
+                                        <input type="radio" checked="checked" name="sell-for" class="checkmark">
                                         <label for="gridCheck">
                                             Free
                                         </label>
