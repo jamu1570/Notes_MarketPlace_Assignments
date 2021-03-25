@@ -45,17 +45,17 @@ $("#toggle-password3").click(function() {
 //faq toggle stuff
 $(".togglefaq").click(function(e) {
   e.preventDefault();
-  var notthis = $(".active").not(this);
+  var notthis = $(".faq-active").not(this);
   notthis
     .find(".fa-minus")
     .addClass("fa-plus")
     .removeClass("fa-minus");
   notthis
-    .toggleClass("active")
+    .toggleClass("faq-active")
     .next(".faqanswer")
     .slideToggle(300);
   $(this)
-    .toggleClass("active")
+    .toggleClass("faq-active")
     .next()
     .slideToggle("fast");
   $(this)

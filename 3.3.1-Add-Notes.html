@@ -6,7 +6,8 @@
         <!-- important meta tags -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width,
+            initial-scale=1 maximum-scale=1.0,user-scalable=no">
         <!-- title -->
         <title>3.3.1-Add-Notes</title>
         <!-- Favicon -->
@@ -33,6 +34,8 @@
     </head>
 
     <body>
+            <div id="page-container">
+            <div id="content-wrap">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#"><img
@@ -50,33 +53,33 @@
                     id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Search
+                            <a class="nav-link" href="2.2.1-Search-Page.html">Search
                                 Notes </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sell Your Notes</a>
+                            <a class="nav-link" href="3.3.0-Dashboard.html">Sell Your Notes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Buyer Requests</a>
+                            <a class="nav-link" href="3.7.5-Buyer-Request.html">Buyer Requests</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="3.5-FAQ.html">FAQ</a>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
+                                <a class="nav-link" href="3.6-Contact-Us.html">Contact Us</a>
                             </li>
                         </li>
                         <li class="nav-item">
                             <div class="dropdown-profile">
                                 <a class="dropbtn-profile nav-link" href="#"><img
                                         src="images/Notes-Details/client-1.jpg"
-                                        alt="customer-image"></a>
+                                        alt="customer-image"><span><i class="fa fa-angle-down"></i></span><span><i class="fa fa-angle-down"></i></span></a>
                                 <div class="dropdown-content-profile">
-                                    <a href="#">My Profile</a>
-                                    <a href="#">My Download</a>
-                                    <a href="#">My Sold Notes</a>
-                                    <a href="#">My Rejected Notes</a>
-                                    <a href="#">Change Password</a>
-                                    <a href="#">logout</a>
+                                    <a href="3.7.1-User-Profile.html">My Profile</a>
+                                    <a href="3.7.2-My-Downloads-Notes.html">My Download</a>
+                                    <a href="3.7.3-My-sold-Notes.html">My Sold Notes</a>
+                                    <a href="3.7.4-My-Rejected-Notes.html">My Rejected Notes</a>
+                                    <a href="3.7.5-Change-Password.html">Change Password</a>
+                                    <a href="3.1.1-Login.html">logout</a>
                                 </div>
                             </div>
                         </li>
@@ -85,7 +88,7 @@
                     <form class="form-inline my-2 my-lg-0">
 
                         <div class="login-note-btn">
-                            <a href=""><button>Logout</button></a>
+                            <button><a href="3.1.1-Login.html"> Logout</a></button>
                         </div>
                     </form>
                 </div>
@@ -381,8 +384,9 @@
             </form>
 
         </div>
-
+</div>
         <!-- footer section -->
+        <footer id="footer">
         <div class="footer-wrapper">
             <div class="container">
                 <div class="row">
@@ -400,6 +404,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        </footer>
         </div>
         <!-- footer section End -->
 

@@ -2,17 +2,17 @@
 			Bootstrap 4.5 Media Queries        
 ==================================================*/
 
-/* @media (min-width: 1441px) and (max-width: 1920px) {
-    .container{
-        max-width: 1700px;
-    }
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .container {
+    max-width: 1700px;
+  }
 }
 
 @media (min-width: 1301px) and (max-width: 1440px) {
-    .container{
-        max-width: 1200px;
-    }
-} */
+  .container {
+    max-width: 1200px;
+  }
+}
 
 /* Large Devices (Desktops & Laptops) */
 
@@ -40,6 +40,23 @@
 /* Small Devices (Portrait Tablets & Small Desktops) */
 
 @media (max-width: 992px) {
+  .dropdown-profile .fa {
+    font-size: xx-large;
+  }
+  a.dropbtn-profile.nav-link.active {
+    display: flex;
+  }
+  a.dropbtn-profile.nav-link span {
+    display: none;
+  }
+  a.dropbtn-profile.nav-link.active span {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  .dropdown-profile:hover .dropdown-content-profile {
+    display: contents;
+  }
   .testimonial .col-md-1.col-sm-1 {
     float: 0 0 10%;
     max-width: 10%;

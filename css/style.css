@@ -5,6 +5,22 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: "Open sans";
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 80px;
+}
 
 table {
   width: 100%;
@@ -32,6 +48,10 @@ table {
 ===============================================*/
 
 /* transparent navbar */
+
+.navbar-expand-lg .navbar-nav {
+  padding-right: 10px;
+}
 
 .navbar-transparent .bg-light {
   background-color: transparent !important;
@@ -91,7 +111,7 @@ li.nav-item {
   font-weight: 600;
   line-height: 20px;
   color: #333333;
-  padding: 0px 15px;
+  padding: 5px 15px;
 }
 .navbar-light .navbar-nav .nav-link {
   font-family: "Open sans";
@@ -103,11 +123,18 @@ li.nav-item {
   /* width: max-content; */
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+  padding-bottom: 5px;
+  color: #6255a5;
+  border-bottom: 3px solid #6255a5;
+}
+
 .navbar-light .navbar-nav .nav-link.active {
   padding-bottom: 5px;
   color: #6255a5;
   border-bottom: 3px solid #6255a5;
 }
+
 .bg-light {
   background-color: #fff !important;
 }
@@ -124,7 +151,9 @@ li.nav-item {
   border: none;
   /* transform: translateY(-5px); */
 }
-
+.login-note-btn button a {
+  color: #fff;
+}
 /*==================================================
             Submenu of Profile
 ==================================================*/
@@ -134,10 +163,14 @@ li.nav-item {
   font-size: 16px;
   border: none;
 }
+a.dropbtn-profile.nav-link span {
+  display: none;
+}
 
 .dropdown-profile {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 
 .dropdown-content-profile {
@@ -186,6 +219,61 @@ li.nav-item {
 .dropdown-profile:hover .dropbtn-profile {
   background-color: #fff;
 }
+
+/* .dropbtn-profile {
+  background-color: #fff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown-profile:hover .dropdown-content-profile {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content-profile {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 200px;
+
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content-profile a {
+  font-family: "Open sans";
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+  padding: 10px 25px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-profile a:last-child {
+  color: #6255a5;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.dropdown-content-profile a:hover {
+  background: #6255a5;
+  color: #fff;
+}
+
+.dropdown-content-profile a:last-child:hover {
+  background: #6255a5;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-profile:hover .dropbtn-profile {
+  background-color: #fff;
+} */
 
 /*===============================================
                     Content Box
@@ -269,6 +357,9 @@ li.nav-item {
   line-height: 22px;
   text-transform: uppercase;
   border: none;
+}
+.btn-general a {
+  color: #fff;
 }
 
 .btn-home {
@@ -476,11 +567,6 @@ li.nav-item {
   z-index: 2;
 }
 
-/* .client-profile form .form-control {
-  height: 45px;
-  font-size: 14px;
-} */
-
 .last-row {
   margin-bottom: 0px;
 }
@@ -488,29 +574,6 @@ li.nav-item {
 .client-profile form .profile-picture-input input {
   height: 100px;
 }
-
-/* .client-profile form .profile-picture-input span img {
-  float: right;
-  margin-top: -45px;
-  margin-right: 225px;
-  position: relative;
-  margin-bottom: 10px;
-  z-index: 2;
-} */
-
-/* .client-profile form .profile-picture-input span p {
-  float: right;
-  margin-top: 1px;
-  margin-right: -80px;
-  margin-bottom: 0px;
-  position: relative;
-  z-index: 2;
-  font-family: "Open sans";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #8a8a8a;
-} */
 
 .btn-general.btn-submit-form {
   width: 125px;
@@ -637,7 +700,7 @@ li.nav-item {
                     About Page
 ==================================================*/
 .home-about-lg {
-  margin-top: 126px;
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 
@@ -833,7 +896,7 @@ li.nav-item {
                     Search-Notes
 ==================================================*/
 .Search-img-text {
-  margin-top: 66px;
+  /* margin-top: 66px; */
   position: relative;
   background: url("../images/Search-Notes/banner-with-overlay.jpg") no-repeat
     center;
@@ -1088,12 +1151,15 @@ select option:hover {
   font-family: "Open sans";
   text-transform: uppercase;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   width: 150px;
   height: 40px;
   background: #6255a5;
   color: #fff;
   border: none;
+}
+.add-note-btn button a {
+  color: #fff;
 }
 .dashboard-detail-2 {
   margin-top: 30px;
@@ -1115,7 +1181,7 @@ select option:hover {
   /* height: 151px; */
   /* font-size: 30px; */
 }
-.flex-container-2 > div > div > h6 {
+.flex-container-2 > div > div > a > h6 {
   /* margin-bottom: 0px; */
   /* padding: 30px; */
   font-family: "Open sans";
@@ -1124,7 +1190,7 @@ select option:hover {
   line-height: 34px;
   color: #6255a5;
 }
-.flex-container-2 > div > div > span {
+.flex-container-2 > div > div > a > span {
   font-family: "Open sans";
   font-size: 16px;
   font-weight: 400;
@@ -1142,7 +1208,7 @@ select option:hover {
 }
 
 .progress-notes {
-  margin-top: 126px;
+  padding-top: 126px;
   margin-bottom: 20px;
 }
 .progress-notes-2 {
@@ -1170,6 +1236,9 @@ select option:hover {
   background: #6255a5;
   color: #fff;
   border: none;
+}
+.Search-notes {
+  margin-top: 66px;
 }
 #search-enter-progress {
   background-image: url("../images/Search-Notes/searchicon.png");
@@ -1246,7 +1315,7 @@ select option:hover {
                 Note Details page
 ==================================================*/
 #Note-Details-page {
-  margin-top: 66px;
+  padding-top: 66px;
 }
 
 #Note-Detail {
@@ -1275,7 +1344,7 @@ select option:hover {
   margin-bottom: 10px;
 }
 
-#Note-Detail .download-btn button {
+#Note-Detail .download-btn button#download-btn {
   border-radius: 3px;
   font-family: "Open sans";
   text-transform: uppercase;
@@ -1410,7 +1479,7 @@ select option:hover {
    padding-bottom = h/w as %
 */
 .responsive-wrapper-padding-bottom-90pct {
-  padding-bottom: 82%;
+  padding-bottom: 60%;
 }
 
 .vertical-heading h3 {
@@ -1461,7 +1530,7 @@ select option:hover {
 #thank-you-modal .modal-content .close {
   position: absolute;
   left: 100%;
-  padding: 0px 5px 0px 0px;
+  padding: 15px 15px 0px 0px;
   transform: translateX(-100%);
 }
 
@@ -1502,29 +1571,35 @@ select option:hover {
   padding: 0px 30px;
 } */
 
-#Review-modal .modal-title {
+.Review-modal .modal-title {
   font-family: "Open sans";
   font-size: 24px;
   font-weight: 600;
   line-height: 28px;
   color: #6255a5;
+  padding: 30px 0px 0px 25px;
   /* margin-bottom: 20px; */
 }
-#Review-modal .modal-footer {
-  border-top: 0px;
-  padding: 0px 16px 16px 16px;
+.Review-modal .modal-body {
+  padding: 0px 40px 0px 40px;
 }
-#Review-modal .modal-header {
+.Review-modal .modal-footer {
+  border-top: 0px;
+  padding: 0px 16px 16px 40px;
+}
+.Review-modal .modal-header {
   border-bottom: 0px;
 }
-#Review-modal .rate {
-  padding-left: inherit;
+.Review-modal .rate {
+  /* padding-left: inherit; */
+  display: flex;
+  justify-content: flex-start;
 }
 
-#Review-modal .rate:not(:checked) > label {
+.Review-modal .rate:not(:checked) > label {
   font-size: 35px;
 }
-#Review-modal h6 {
+.Review-modal h6 {
   font-family: "Open sans";
   font-size: 16px;
   font-weight: 400;
@@ -1621,6 +1696,9 @@ select option:hover {
 /*==================================================
                     FAQ - Page
 ==================================================*/
+.FAQ-Page {
+  padding-top: 66px;
+}
 
 .faq {
   margin: 60px 0px;
@@ -1655,7 +1733,7 @@ select option:hover {
   color: #333333;
 }
 
-.faq a.active {
+.faq a.faq-active {
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
@@ -1683,7 +1761,7 @@ select option:hover {
   /* border-radius: 3px; */
   background: #f3f3f3;
 }
-.togglefaq.active {
+.togglefaq.faq-active {
   background: none;
   border-bottom: none;
 }
@@ -1703,6 +1781,43 @@ select option:hover {
 }
 
 /*==================================================
+                   Reject Modal-Admin
+==================================================*/
+.reject-modal {
+  padding-top: 126px;
+}
+#reject-button {
+  /* width: 100px; */
+}
+#cancel-button {
+  width: 100px;
+  background-color: #cccccc;
+  border: none;
+}
+.reject-modal .modal-footer {
+  border-top: 0px;
+  padding-right: 25px;
+}
+.reject-modal .modal-title {
+  font-family: "Open sans";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #6255a5;
+  padding: 25px 0px 0px 0px;
+}
+.reject-modal .modal-header {
+  border-bottom: 0px;
+  padding-left: 25px;
+}
+.reject-modal .modal-body {
+  padding: 0px 25px 0px 25px;
+}
+.reject-modal .form-control {
+  width: 100%;
+}
+
+/*==================================================
                     add notes page
 ==================================================*/
 .last-row {
@@ -1714,7 +1829,12 @@ select option:hover {
   width: 20px;
   margin-right: 5px;
 }
-
+/* .radio-input input[type="radio"]:checked:after {
+  border-radius: 15px;
+  content: "";
+  display: inline-block;
+  border: 10px solid #6255a5;
+} */
 .radio-input label {
   margin-right: 15px;
 }
@@ -1726,7 +1846,9 @@ select option:hover {
 /*==================================================
                    Conatct Us
 ==================================================*/
-
+.Contact-Us {
+  padding-top: 66px;
+}
 .contactus {
   margin-top: 66px;
   margin-bottom: 50px;
@@ -1748,8 +1870,33 @@ select option:hover {
 }
 
 /*==================================================
+                  Table color
+==================================================*/
+#my-reject-note tr td:first-child + td > a,
+#my-sold-note tr td:first-child + td > a,
+#my-download-note tr td:first-child + td > a,
+#buyer-request tr td:first-child + td > a {
+  color: #6255a5;
+}
+#my-reject-note tr td:first-child,
+#my-sold-note tr td:first-child,
+#my-download-note tr td:first-child,
+#buyer-request tr td:first-child {
+  text-align: center;
+}
+#my-reject-note tr td:first-child + td + td + td + td {
+  color: #6255a5;
+}
+
+/*==================================================
                     footer-wrapper
 ==================================================*/
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
 .footer-wrapper {
   height: 80px;
   border-top: 0.2px solid #8a8a8a;
@@ -1790,4 +1937,8 @@ ul.social-list li a {
   color: #fff;
   border-radius: 50%;
   background: #6255a5;
+}
+
+a:hover {
+  text-decoration: none;
 }
